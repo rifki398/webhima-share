@@ -1,0 +1,41 @@
+section{
+    padding: 0;
+    margin: auto;
+}
+#event-section{
+    padding-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/background-events.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.display-container{
+    margin: auto;
+    width: 100%;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75%;
+    margin-bottom: 16px;
+}
+.container-slide{
+    height: 20%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+.owl-pict{
+    margin:auto 16px;
+    width: 100%;
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    :hover{
+        cursor: pointer;
+        margin-top: -8px;
+    }
+}

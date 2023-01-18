@@ -1,0 +1,318 @@
+html:focus-within{
+    scroll-behavior: smooth;
+}
+section{
+    #background-img{
+        position: relative;
+        justify-content: center;
+    }
+    #popup-section{
+        top:0;
+        left: 0;
+    }
+}
+#cabinet-section{
+    height: 870px;
+    width: 100%;
+    .departement-title{
+        justify-content: center;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 70px;
+        h2{
+            font-family: 'Poppins';
+            font-size: 28pt;
+            font-weight:bold;
+        }
+    }
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out; //? this transition affect the blur delay
+    &.active-appear{ //for appear animation
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.active-blur{ //for blur background
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+}
+.cabinet-list{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    button{
+        div{
+            padding-top: 4px;
+        }
+        background-color: white;
+        width: 8%;
+        border: none;
+        :hover{
+            border-style:inset;
+            border-width: 1px;
+            border-color: gray;
+            border-radius: 10px;
+            img:hover{
+                border: none;
+            }
+            h6:hover{
+                border: none;
+            }
+        }
+    }
+    p{
+        font-family: 'Poppins';
+        color: #797979;
+        font-weight: bold;
+        font-size: 8pt;
+    }
+    .cabinet{
+        margin: auto;
+        text-align: center;
+        div{
+            display: inline-block;
+        }
+        img{
+            max-width: 70%;
+        }
+        h6{
+            margin-top: 12px;
+            font-family: 'Poppins';
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 12pt;
+        }
+    }
+}
+.description-list{
+    display:flex;
+    text-align: center;
+    width: 100%;
+    div{
+        color:#797979;
+        font-family: 'Poppins'; 
+        font-size: 14px;
+        width: 16%;
+        margin:auto;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    margin-top: 1px;
+    margin-bottom:60px;
+}
+//------------------------------------------ CSS FOR BACKGROUND LOGO ----------------------------------
+.bph img{
+    border-radius: 10px;
+    background-color: #FDFBDA;
+}
+.adkesma img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E8FFFB;
+}
+.hublu img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFE7FB;
+}
+.dagri img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+.ristek img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E2F3FF;
+}
+.medfo img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFF2F2;
+}
+.kwu img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F6EEE7;
+}
+.psdm img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E2FFF1;
+}
+.kader img{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F1E8FF;
+}
+//------------------------------------------- CSS FOR POP UP -----------------------------------------
+.popup-cabinet{
+    h5{
+        padding-top: 25px;
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 32pt;
+        letter-spacing: 1px;
+        text-align: center;
+        color:#B80616;
+        border-bottom:8px solid yellow;
+        padding-bottom: 10px;
+    }
+    p{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Poppins';
+        padding: 100px 16px 100px 16px; //shouuld vertical align
+    }
+    background-color: white;
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    position: fixed;
+    width: 80%;
+    height: 70%;
+    z-index:9;
+    border: 2px solid #ccc;
+    padding: 2px 14px;
+    left: 10%; //(100%-width)/2
+}
+
+.close-btn-container{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+#close-btn{
+    float: right;
+    cursor: pointer;
+}
+
+#popupbph{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/BPH.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupadkesma{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/ADKESMA.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupristek{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/RISTEK.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupdagri{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/DAGRI.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popuphublu{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;;
+    background-image: url("../images/HUBLU.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupmedfo{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/MEDFO.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupkader{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/KADER.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popuppsdm{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/PSDM.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
+#popupkwu{
+    //!---Pop up hidden
+    top:100px;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    background-image: url("../images/KWU.png");
+    &.active-popup{
+        top: 150px;
+        opacity: 1;
+        transition: 0.6s;
+        visibility: visible;
+    }
+}
