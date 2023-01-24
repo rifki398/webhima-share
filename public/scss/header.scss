@@ -12,16 +12,17 @@ header{
     top: 0;
     z-index: 10;
     display: flex;
-    img{
-        //jika bisa di justify atas bawah silahkan
-        height: 80px;
-        margin-top: 10px;
-        margin-left: 30px;
-    }
 }
 .logo-top{
-    width: 150px;
-    height: 100%;
+    height: 100px;
+    padding-top:1.2vh; //ganti
+    padding-left:1.2vw;  //ganti
+    img{
+        display: block;
+        margin: auto;
+        //jika bisa di justify atas bawah silahkan
+        height: 10vh;
+    }
 }
 .menu-top{
     margin-left: 180px;
@@ -119,7 +120,6 @@ header{
     border: 1px solid #8299E9;
     padding: 60px;
     height: 100%;
-    width: 50%;
     background-color: white;
     text-align: center;
     h3{
@@ -128,11 +128,11 @@ header{
         font-weight: bold;
     }
 }
-.username,.password{
+.username-cl,.password-cl{
     display: inline-block;
     width: 70%;
-    p{
-        text-align: left;
+    text-align: left;
+    label{
         line-height: 8px;
         margin-top: 30px;
         font-weight: bold;
@@ -144,7 +144,7 @@ header{
         width: 100%;
     }
 }
-.checkbox{
+.checkbox-cl{
     display: inline-block;
     width: 70%;
     justify-content: left;
@@ -159,7 +159,6 @@ header{
     margin-bottom: 60px;
 }
 .sign-in-col{
-
     button{
         font-weight: bold;
         padding-bottom: 4px;
@@ -192,7 +191,6 @@ header{
     padding:60px;
     background-color: #8299E9;
     height: 100%;
-    width: 50%;
     h2{
         margin-top: 80px;
         color: white;
@@ -257,7 +255,7 @@ header{
 .menu-more{
     display:none;
     position: absolute;
-    right: 20px;
+    right: 30px;
     float: right;
     height: 100%;
     width:40px;
@@ -270,7 +268,7 @@ header{
         cursor: pointer;
     }
 }
-@media (max-width:768px){
+@media (max-width:575.98px){
     //---------------------------
     .responsive-visibility{
         visibility: visible;
@@ -279,6 +277,12 @@ header{
         display: inline-block;
     }
     //---------------------------
+    header{
+        height: 80px;
+    }
+    .logo-top{
+        height: 80px;
+    }
     .login-top{
         display: none;
     }
@@ -293,15 +297,15 @@ header{
         ul{
             display: inline;
             position: fixed;
-            top:100px;
-            width: 100%;
+            top:80px;
+            width: 40%;
             height: (7 * 40px);
-            left: 0;
+            right: 0;
             text-align: center;
+            overflow: hidden;
         }
         li{
-            right: -800px;
-            margin-left: -32px;
+            top: -800px;
             a{
                 padding-top: 8px;
             }
@@ -315,15 +319,8 @@ header{
             height: 40px;
         }
     }
-    
-    #background-img{
-        display: none;
-    }
-    #cabinet-section{
-        display: none;
-    }
     #checkbox-menu:checked ~ .menu-top li{
-        right: 0;
+        top: 0;
     }
     // -------- login responsive -----------------
     #login-section{
@@ -331,6 +328,7 @@ header{
     }
     .sign-up{
         display: none;
+        width: 0%;
     }
     .sign-in{
         width: 100%;

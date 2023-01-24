@@ -1,0 +1,87 @@
+*{
+    font-family:'Poppins';
+    padding: 0;
+}
+#admin-board{
+    width: 100%;
+}
+.topbar{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    margin-bottom: 10px;
+    padding:10px 30px;
+}
+.title{
+    color: white;
+    font-size: 32pt;
+    font-weight: bold;
+}
+.logout{
+    margin: auto 20px auto auto;
+    button{
+        color: white;
+        background-color: blue;
+        padding: 10px 28px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    button:hover{
+        background-color: rgba(0, 0, 255, 0.838);
+    }
+}
+.for{
+    margin: auto;
+    width: 95%;
+    h3{
+        line-height: 40px;
+        width: 100%;
+        font-size: 16pt;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    margin-bottom: 14px;
+}
+.content{
+    background-color: #E0E3EB;
+    padding: 8px;
+    label{
+        font-weight: bold;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 10pt;
+    }
+    a{
+        margin-top: 20px;
+        font-size: 10pt;
+    }
+}
+#publication{
+    label{
+        margin-right: 2px;
+        width: 60px;
+    }
+    button{
+        margin-top: 20px;
+    }
+}
+#store{
+    label{
+        margin-right: 2px;
+        width: 130px;
+    }
+}
+.submit-btn{
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 3px 8px;
+    margin-top: 10px;
+    background-color: black;
+}
+.submit-btn:hover{
+    background-color: rgba(0, 0, 0, 0.813);
+}

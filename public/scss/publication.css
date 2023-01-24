@@ -1,0 +1,351 @@
+section {
+  padding-top: 100px;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.pub-top-container {
+  width: 100%;
+  height: 700px;
+  background-image: url("../images/background-publication.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 4px solid rgb(28, 28, 161);
+}
+.pub-top-container div {
+  margin: auto;
+  width: 60%;
+  height: 70px;
+  background-color: rgb(28, 28, 161);
+  border-radius: 60px;
+}
+.pub-top-container h1 {
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.pub-top-container button {
+  background: none;
+  position: absolute;
+  bottom: 36%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 38px;
+  outline: none;
+  border: none;
+  color: rgb(28, 28, 161);
+  -webkit-animation: move 1.2s infinite ease-in-out;
+          animation: move 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes move {
+  0% {
+    bottom: 36%;
+  }
+  50% {
+    bottom: 34%;
+  }
+  100% {
+    bottom: 36%;
+  }
+}
+
+@keyframes move {
+  0% {
+    bottom: 36%;
+  }
+  50% {
+    bottom: 34%;
+  }
+  100% {
+    bottom: 36%;
+  }
+}
+.pub-container {
+  width: 100%;
+}
+.pub-container h1 {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.first-container {
+  height: 520px;
+  display: flex;
+}
+
+.img-container {
+  width: 30%;
+}
+.img-container img {
+  max-width: 80%;
+}
+.img-container ul, .img-container li {
+  margin-left: 100px;
+  margin-top: 10px;
+  color: rgb(28, 28, 161);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.upload-container {
+  padding-top: 50px;
+  margin-left: 80px;
+  width: 50%;
+  text-align: left;
+}
+.upload-container h3 {
+  color: rgb(28, 28, 161);
+  font-size: 34px;
+  font-weight: bold;
+}
+.upload-container p {
+  font-size: 16pt;
+}
+.upload-container button {
+  margin-top: 45px;
+  justify-content: left;
+  display: flex;
+  height: 45px;
+  width: 180px;
+  background-color: rgb(28, 28, 161);
+  color: white;
+  border-radius: 20px;
+  position: relative;
+  transition: ease-out 0.3s;
+  box-shadow: inset 0 0 0 0 white;
+}
+.upload-container button :not(p) {
+  padding-left: 14px;
+  padding-top: 7px;
+  font-size: 24px;
+}
+.upload-container button p {
+  font-weight: bold;
+  margin-left: 16px;
+  padding-top: 5px;
+  font-size: 21px;
+}
+.upload-container button:hover {
+  outline: 1px solid rgb(28, 28, 161);
+  box-shadow: inset 180px 0 0 0 white;
+  color: rgb(28, 28, 161);
+}
+
+.second-container {
+  height: 600px;
+  background-image: url("../images/blue-publication.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.creation-bar {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.creation-1 {
+  height: 230px;
+}
+.creation-1 img {
+  float: right;
+  margin-top: -280px;
+  width: 20%;
+}
+.creation-1 .creation-title {
+  margin: auto;
+  margin-right: 50px;
+  text-align: right;
+}
+.creation-1 .creation-title h3 {
+  line-height: 10px;
+  margin-left: 100px;
+  color: rgb(28, 28, 161);
+  font-size: 28pt;
+  font-weight: bold;
+}
+.creation-1 .event-slide {
+  border-left: 4px solid rgb(28, 28, 161);
+  width: 65%;
+}
+
+.img-container .type-text {
+  text-align: left;
+  height: 52px;
+  line-height: 52px;
+  overflow: hidden;
+}
+
+.type-text li {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: relative;
+  -webkit-animation: slide 10s steps(4) infinite;
+          animation: slide 10s steps(4) infinite;
+}
+
+.type-text li span {
+  position: relative;
+}
+
+.type-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 48px;
+  width: 130%;
+  background: white;
+  border-left: 2px solid black;
+  -webkit-animation: typing 2.5s infinite;
+          animation: typing 2.5s infinite;
+}
+
+@-webkit-keyframes typing {
+  50% {
+    left: 100%;
+    margin: 0 -5px 0 5px;
+  }
+  70% {
+    left: 100%;
+    margin: 0 -5px 0 5px;
+  }
+  100% {
+    left: 0;
+    margin: 0 5px 0 -5px;
+  }
+}
+
+@keyframes typing {
+  50% {
+    left: 100%;
+    margin: 0 -5px 0 5px;
+  }
+  70% {
+    left: 100%;
+    margin: 0 -5px 0 5px;
+  }
+  100% {
+    left: 0;
+    margin: 0 5px 0 -5px;
+  }
+}
+@-webkit-keyframes slide {
+  100% {
+    top: -208px;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -208px;
+  }
+}
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.slider-card {
+  width: 150px;
+  text-align: center;
+  background-color: none;
+  border-radius: 5px;
+  margin: 4px;
+}
+.slider-card img {
+  text-align: center;
+  max-width: 150px;
+  height: 200px;
+  margin: auto;
+}
+.slider-card h5 {
+  font-size: 14pt;
+}
+
+.owl-1 {
+  height: 100%;
+}
+
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+  section {
+    padding-top: 80px;
+  }
+  .pub-top-container h1 {
+    font-size: 24pt;
+  }
+  .pub-top-container div {
+    height: 60px;
+  }
+  .first-container {
+    height: 420px;
+  }
+  .pub-container h1 {
+    font-size: 26pt;
+    margin-bottom: 80px;
+  }
+  .img-container {
+    margin-left: 0;
+  }
+  .img-container ul, .img-container li {
+    margin-left: 0;
+  }
+  .upload-container {
+    padding: 0;
+    width: auto;
+  }
+  .upload-container h3 {
+    font-size: 22pt;
+  }
+  .upload-container p {
+    font-size: 14pt;
+  }
+  .creation-1 {
+    height: 190px;
+  }
+  .creation-1 .creation-title h3 {
+    font-size: 20pt;
+  }
+  .creation-1 .event-slide {
+    width: 45%;
+  }
+  .second-container {
+    height: 320px;
+  }
+  .slider-card {
+    width: 120px;
+  }
+  .slider-card img {
+    height: 160px;
+  }
+}/*# sourceMappingURL=publication.css.map */

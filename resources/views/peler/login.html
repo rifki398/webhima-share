@@ -1,0 +1,56 @@
+<section id="popup-login">
+    <section id="login-section">
+        <form action="#" id="form-sign-up">
+            <div class="sign-up">
+                <h2>Hello!</h2>
+                <p>This Log-in Form is for admin only, thank you.</p>
+                <div style="width: 100%; margin: auto;">
+                    <button type="submit" onclick="signup()">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        <form action="#" id="form-sign-in">
+            <div class="sign-in">
+                <div class="close-icon" onclick="getClose()">
+                    <span class="fas fa-times"></span>
+                </div>
+                <h3>Sign In</h3>
+                <div class="sign-in-col">
+                    <div class="username-cl">
+                        <label for="username">Username</label>
+                        <input id="username" type="text">
+                    </div>
+                    <div class="password-cl">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                    </div>
+                    <div class="checkbox-cl">
+                        <input type="checkbox">
+                        <p>Remember Me</p>
+                    </div>
+                    <div style="margin:auto; display: flex;">
+                        <button type="submit" onclick="auth()">Sign In</button>
+                    </div>
+                    <a href="#">Forget your password?</a>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script>
+        function auth(){
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+            if(username=='admin' && password=='12345'){
+                window.location.assign("./admin.html");
+                alert('Login Successfully');
+            }else{
+                alert('Login Failed!');
+                return;
+            }
+        }
+        function signup(){
+            alert('Please Contact Staff For Sign Up');
+            return;
+        }
+    </script>
+</section>

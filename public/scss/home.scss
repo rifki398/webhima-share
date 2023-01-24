@@ -161,3 +161,41 @@ html{
 #slide-3-home:checked ~ .auto-btn3{
     background: rgb(0,0,0);
 }
+//!--------------------------------- FOR RESPONSIVE -----------------------------------------------------
+@media (max-width:575.98px){
+    #background-img{
+        display: flex;
+        flex-direction: column;
+        height: 1150px;
+    }
+    .logo-container{
+        width: 100%;
+    }
+    .background-logo{
+        margin-top: 100px;
+        width: 430px; //280px
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            max-width: 58%;
+            margin-top: 30px;
+        }
+        h2{
+            font-size: 30pt;
+        }
+    }
+    .text-container{
+        margin-top: 80px; //jarak dari atas
+        margin-left: 0px; //kalau bisa tepat ditengah
+        width: 100%;
+        h2{
+            font-size: 22pt;
+        }
+        p{
+            font-size: 11pt;
+        }
+        //for slider
+        overflow: hidden;
+    }
+}

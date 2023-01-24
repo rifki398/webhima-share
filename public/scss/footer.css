@@ -1,0 +1,103 @@
+footer {
+  vertical-align: middle;
+  width: 100%;
+  background-color: #17181B;
+  height: 220px;
+  display: flex;
+  margin-top: 0;
+}
+footer img {
+  max-width: 80px;
+  margin-left: 15px;
+}
+footer h5 {
+  color: white;
+  font-size: 14pt;
+  padding-bottom: 8px;
+}
+footer p {
+  color: white;
+  font-size: 10pt;
+}
+
+.list-contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.list-contact a {
+  text-decoration: underline;
+  color: white;
+  font-size: 10pt;
+  padding-bottom: 8px;
+}
+
+.list-about-us {
+  display: flex;
+  flex-direction: column;
+}
+.list-about-us a {
+  padding-bottom: 8px;
+  text-decoration: underline;
+  font-size: 10pt;
+  color: white;
+  text-align: left;
+}
+
+.logo-hima-bot {
+  margin-top: 75px;
+}
+
+.logo-cabinet-bot {
+  margin-top: 60px;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.contact {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.about-us {
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.info-bot {
+  margin-top: 50px;
+  margin-right: 15px;
+  margin-left: auto;
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .list-about-us a, .list-contact a {
+    font-size: 8pt;
+  }
+  footer {
+    height: 180px;
+  }
+  footer img {
+    max-width: 60px;
+  }
+  footer h5 {
+    font-size: 12pt;
+  }
+  footer p {
+    font-size: 8pt;
+  }
+  .contact h5 {
+    font-size: 11pt;
+  }
+  .contact p {
+    font-size: 8pt;
+  }
+  .about-us h5 {
+    font-size: 11pt;
+  }
+  .about-us p {
+    font-size: 8pt;
+  }
+}/*# sourceMappingURL=footer.css.map */

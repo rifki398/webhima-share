@@ -1,5 +1,7 @@
 <?php
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,8 @@ Route::get('/store', 'MainController@store')->name('store');
 Route::get('/events', 'MainController@events')->name('events');
 
 Route::get('/publications', 'MainController@publications')->name('publications');
+
+Route::get('/private',[AdminController::class,'admin']);
+
+Route::post('/private/login',[AdminController::class,'login']);
 ?>

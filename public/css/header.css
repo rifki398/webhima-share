@@ -13,20 +13,18 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-header img {
-  height: 80px;
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
 .logo-top {
-  width: 150px;
-  height: 100%;
+  height: 100px;
+  padding-top: 1.2vh;
+  padding-left: 1.2vw;
+}
+.logo-top img {
+  display: block;
+  margin: auto;
+  height: 10vh;
 }
 
 .menu-top {
@@ -34,31 +32,27 @@ header img {
   height: 100%;
   text-align: center;
 }
-
 .menu-top ul {
   height: 100px;
 }
-
 .menu-top li {
   width: 150px;
   position: relative;
   display: inline-block;
 }
-
 .menu-top li a {
   vertical-align: middle;
   height: 100%;
   width: 100%;
   padding-top: 41px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 .menu-top li :after {
   content: "";
   position: absolute;
@@ -67,18 +61,14 @@ header img {
   width: 100%;
   left: 0;
   bottom: 0;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-
 .menu-top li :hover {
   background-color: #232529;
 }
-
 .menu-top li :hover:after {
   height: 4px;
 }
-
 .menu-top ul li {
   height: 100px;
 }
@@ -91,9 +81,8 @@ header img {
   height: 100%;
   padding-top: 30px;
 }
-
 .login-top button {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 14px;
   width: 100%;
@@ -103,7 +92,6 @@ header img {
   background-color: transparent;
   border-radius: 8px;
 }
-
 .login-top button:hover {
   color: #17181B;
   background-color: #08D0FC;
@@ -118,20 +106,12 @@ header img {
   position: fixed;
   top: 0;
   z-index: 20;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #login-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1000px;
   height: 580px;
@@ -144,52 +124,44 @@ header img {
   border: 1px solid #8299E9;
   padding: 60px;
   height: 100%;
-  width: 50%;
   background-color: white;
   text-align: center;
 }
-
 .sign-in h3 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 32pt;
   font-weight: bold;
 }
 
-.username, .password {
+.username-cl, .password-cl {
   display: inline-block;
   width: 70%;
-}
-
-.username p, .password p {
   text-align: left;
+}
+.username-cl label, .password-cl label {
   line-height: 8px;
   margin-top: 30px;
   font-weight: bold;
 }
-
-.username input, .password input {
+.username-cl input, .password-cl input {
   padding-left: 4px;
   border-radius: 4px;
   border: 1px solid black;
   width: 100%;
 }
 
-.checkbox {
+.checkbox-cl {
   display: inline-block;
   width: 70%;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   text-align: left;
   margin-bottom: 60px;
 }
-
-.checkbox input {
+.checkbox-cl input {
   float: left;
   margin-top: 2.5px;
 }
-
-.checkbox p {
+.checkbox-cl p {
   font-size: 9pt;
 }
 
@@ -206,17 +178,14 @@ header img {
   margin-bottom: 10px;
   border: 1px solid black;
 }
-
 .sign-in-col button:hover {
   background-color: white;
   color: black;
 }
-
 .sign-in-col a {
   text-decoration: none;
   color: black;
 }
-
 .sign-in-col a:hover {
   text-decoration: underline;
 }
@@ -228,24 +197,20 @@ header img {
   padding: 60px;
   background-color: #8299E9;
   height: 100%;
-  width: 50%;
 }
-
 .sign-up h2 {
   margin-top: 80px;
   color: white;
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 40pt;
   letter-spacing: 1px;
 }
-
 .sign-up p {
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 14pt;
 }
-
 .sign-up button {
   border: 2px solid white;
   font-weight: bold;
@@ -259,7 +224,6 @@ header img {
   margin: auto;
   margin-top: 117px;
 }
-
 .sign-up button:hover {
   background-color: white;
   color: #8299E9;
@@ -269,7 +233,6 @@ header img {
   position: relative;
   font-size: 20px;
 }
-
 .close-icon span {
   position: absolute;
   color: black;
@@ -277,7 +240,6 @@ header img {
   right: -52px;
   font-size: 20px;
 }
-
 .close-icon span:hover {
   cursor: pointer;
 }
@@ -297,7 +259,6 @@ header img {
 #checkbox-menu {
   display: none;
 }
-
 #checkbox-menu :focus {
   background-color: red;
 }
@@ -305,28 +266,32 @@ header img {
 .menu-more {
   display: none;
   position: absolute;
-  right: 20px;
+  right: 30px;
   float: right;
   height: 100%;
   width: 40px;
   padding-top: 35px;
 }
-
 .menu-more span {
   color: white;
   font-size: 30px;
 }
-
 .menu-more span:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575.98px) {
   .responsive-visibility {
     visibility: visible;
   }
   .responsive-block {
     display: inline-block;
+  }
+  header {
+    height: 80px;
+  }
+  .logo-top {
+    height: 80px;
   }
   .login-top {
     display: none;
@@ -343,16 +308,15 @@ header img {
   .menu-top ul {
     display: inline;
     position: fixed;
-    top: 100px;
-    width: 100%;
+    top: 80px;
+    width: 40%;
     height: 280px;
-    left: 0;
+    right: 0;
     text-align: center;
+    overflow: hidden;
   }
   .menu-top li {
-    right: -800px;
-    margin-left: -32px;
-    -webkit-transition: all 0.5s;
+    top: -800px;
     transition: all 0.5s;
     border-bottom: 2px solid #232529;
     background-color: #17181B;
@@ -365,24 +329,18 @@ header img {
     width: 105%;
     height: 40px;
   }
-  #background-img {
-    display: none;
-  }
-  #cabinet-section {
-    display: none;
-  }
   #checkbox-menu:checked ~ .menu-top li {
-    right: 0;
+    top: 0;
   }
   #login-section {
     width: 500px;
   }
   .sign-up {
     display: none;
+    width: 0%;
   }
   .sign-in {
     width: 100%;
     border-radius: 10px;
   }
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

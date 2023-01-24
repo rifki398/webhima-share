@@ -15,9 +15,6 @@ button{
     outline: none;
     border: none;
 }
-.publication-section{
-    height: 2800px;
-}
 //------------------------------- TOP CONTAINER ------------------------------
 .pub-top-container{
     width: 100%;
@@ -26,14 +23,11 @@ button{
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 70px;
     position: relative;
     display: flex;
     flex-direction: column;
     div{
-        position: absolute;
-        left: 20%; // (100-60)/2
-        top:315px; // (700-70)/2
+        margin: auto;
         width: 60%;
         height: 70px;
         background-color: rgb(28, 28, 161);
@@ -42,7 +36,6 @@ button{
     h1{
         padding-top: 10px;
         font-size: 40px;
-        font-family: 'Poppins';
         font-weight: bold;
         color: white;
     }
@@ -50,7 +43,8 @@ button{
         background: none;
         position: absolute;
         bottom: 36%;
-        right: 48.7%;
+        right: 50%;
+        transform: translateX(50%);
         font-size:38px;
         outline: none;
         border: none;
@@ -66,32 +60,29 @@ button{
 }
 //--------------------------------- CONTAINER ---------------------------------
 .pub-container{
-    height: 1000px;
     width: 100%;
     h1{
         width: 100%;
         margin-top: 80px;
         margin-bottom: 40px;
         font-size: 40px;
-        font-family: 'Poppins';
         font-weight: bold;
     }
 }
 .first-container{
-    height: 380px;
+    height: 520px;
     display: flex;
 }
 .img-container{
-    margin-left: 50px;
     width: 30%;
     img{
         max-width: 80%;
     }
     ul,li{
+        margin-left: 100px;
         margin-top: 10px;
         color:rgb(28, 28, 161) ;
         font-size: 30px;
-        font-family: 'Poppins';
         font-weight: bold;
         line-height: 52px;
     }
@@ -104,7 +95,6 @@ button{
     h3{
         color:rgb(28, 28, 161) ;
         font-size: 34px;
-        font-family: 'Poppins';
         font-weight: bold;
     }
     p{
@@ -125,7 +115,6 @@ button{
             font-size:24px;
         }
         p{
-            font-family: 'Poppins';
             font-weight: bold;
             margin-left: 16px;
             padding-top: 5px;
@@ -142,72 +131,46 @@ button{
     }
 }
 .second-container{
-    padding-top: 140px;
-    height: 1600px;
+    height: 600px;
     background-image: url("../images/blue-publication.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .creation-bar{
+    height: 100%;
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 //TODO---------------------------------------- FOR CREATION ------------------------------------------
-.creation{
-    margin-bottom: 200px;
-}
 .creation-1{
+    height: 230px;
     img{
         float: right;
         margin-top: -280px;
         width: 20%;
     }
     .creation-title{
-        padding-top:115px;
-        padding-right: 70px;
-        width: 32%;
+        margin: auto;
+        margin-right: 50px;
         text-align: right;
         h3{
             line-height: 10px;
             margin-left: 100px;
             color:rgb(28, 28, 161);
-            font-size: 30px;
-            font-family: 'Poppins';
+            font-size: 28pt;
             font-weight: bold;
         }
     }
     .event-slide{
         border-left: 4px solid rgb(28, 28, 161);
-        width: 68%;
-        height: 230px;
-    }
-}
-.creation-2{
-    .creation-title{
-        padding-top:115px;
-        padding-right: 70px;
-        width: 23%;
-        text-align: left;
-    }
-    h3{
-        line-height: 10px;
-        margin-left: 100px;
-        color:rgb(28, 28, 161);
-        font-size: 30px;
-        font-family: 'Poppins';
-        font-weight: bold;
-    }
-    .event-slide{
-        border-right: 4px solid rgb(28, 28, 161);
-        width: 77%;
-        height: 230px;
+        width: 65%;
     }
 }
 //TODO------------------------------------------------------------------------------------------------
 //*--------------------------------------- FOR TYPING ANIMATION ---------------------------------------
 .img-container .type-text{
     text-align: left;
-    padding-left: 100px;
     height: 52px;
     line-height: 52px;
     overflow: hidden;
@@ -255,6 +218,7 @@ button{
 //!----------------------------------------FOR OWL CAROUSEL --------------------------------------------
 .slider{
     position: relative;
+    height: 100%;
 }
 .slider-card{
     width: 150px;
@@ -272,7 +236,69 @@ button{
         font-size: 14pt;
     }
 }
+.owl-1{
+    height: 100%;
+}
 .slider .owl-item.active.center .slider-card{
     transform: scale(1);
     opacity: 1;
+}
+//!------------------------------------------ FOR RESPONSIVE --------------------------------------
+@media (max-width:575.98px){
+    section{
+        padding-top: 80px;
+    }
+    .pub-top-container{
+        h1{
+            font-size: 24pt;
+        }
+        div{
+            height: 60px;
+        }
+    }
+    .first-container{
+        height: 420px;
+    }
+    .pub-container{
+        h1{
+            font-size: 26pt;
+            margin-bottom: 80px;
+        }
+    }
+    .img-container{
+        margin-left: 0;
+        ul,li{
+            margin-left: 0;
+        }
+    }
+    .upload-container{
+        padding: 0;
+        width: auto;
+        h3{
+            font-size: 22pt;
+        }
+        p{
+            font-size: 14pt;
+        }
+    }
+    .creation-1{
+        height: 190px;
+        .creation-title{
+            h3{
+                font-size: 20pt;
+            }
+        }
+        .event-slide{
+            width: 45%;
+        }
+    }
+    .second-container{
+        height: 320px;
+    }
+    .slider-card{
+        width: 120px;
+        img{
+            height: 160px;
+        }
+    }
 }

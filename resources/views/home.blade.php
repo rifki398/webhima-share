@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link
-      rel="stylesheet"
-      href="./vendor/bootstrap/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/cabinet.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/cabinet.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script type="text/javascript">
-      var counter = 1;
-      setInterval(function () {
-        document.getElementById("slide-" + counter + "-home").checked = true;
+      var counter=1;
+      setInterval(function(){
+        document.getElementById('slide-'+counter+'-home').checked=true;
         counter++;
-        if (counter > 3) {
-          counter = 1;
+        if(counter>3){
+          counter=1;
         }
-      }, 5000);
+      },5000)
     </script>
-    <script src="./js/cabinet-popup.js"></script>
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.js"></script>
-    <script src="./js/page-animation.js"></script>
-    <script
-      src="https://kit.fontawesome.com/fc56662415.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/fc56662415.js" crossorigin="anonymous"></script>
+    <script src="./js/all_script.js"></script>
   </head>
   <body>
-    <!-- Header -->
+    <!--HEADER-->  
     @extends('template.header')
     @section('header')
     @endsection
@@ -51,7 +37,7 @@
       <div class="logo-container">
         <div class="background-logo">
           <h2 class="cabinet-title">KABINET</h2>
-          <img src="images/logo-dinakara.png" />
+          <img src="images/logo-dinakara.png">
           <h2 class="cabinet-name">DINAKARA</h2>
         </div>
       </div>
@@ -59,9 +45,9 @@
       <div class="text-container">
         <div class="slides">
           <!--- Dot Button -->
-          <input type="radio" name="radio-btn" id="slide-1-home" />
-          <input type="radio" name="radio-btn" id="slide-2-home" />
-          <input type="radio" name="radio-btn" id="slide-3-home" />
+          <input type="radio" name="radio-btn" id="slide-1-home">
+          <input type="radio" name="radio-btn" id="slide-2-home">
+          <input type="radio" name="radio-btn" id="slide-3-home">
           <!-- Slide 1 -->
           <div class="slide-home first">
             <h2>Himpunan Mahasiswa Fisika</h2>
@@ -90,11 +76,11 @@
             <h2>HIMASIKA</h2>
             <p>
               1. Menjalin komunikasi yang kolaboratif dengan stakeholder dan
-              mitra Himasika <br /><br />
+              mitra Himasika <br><br>
               2. Menjadikan Himasika sebagai rumah bagi anggotanya <br />
-              <br />
+              <br>
               3. Menjadikan Himasika sebagai organisasi dengan tata kelola yang
-              terstruktur <br /><br />
+              terstruktur <br><br>
             </p>
           </div>
         </div>
@@ -378,11 +364,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
+    <!--FOOTER-->  
     @extends('template.footer')
     @section('footer')
     @endsection
-  
   </body>
 </html>

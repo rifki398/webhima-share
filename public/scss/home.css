@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#background-img {
+  background-image: url("../images/background-home.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+
+.logo-container {
+  float: right;
+  width: 40%;
+}
+
+.text-container {
+  position: relative;
+  margin-top: 230px;
+  margin-left: 35px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 55%;
+  height: 370px;
+  float: left;
+  overflow: hidden;
+}
+.text-container h2 {
+  background-color: #E47321;
+  background-image: linear-gradient(0deg, #E47321, #daab7f);
+  background-size: 100%;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 26pt;
+  line-height: 38px;
+}
+.text-container p {
+  color: white;
+  padding-top: 25px;
+}
+
+.slides {
+  width: 500%;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+.slides input {
+  display: none;
+}
+
+.slide-home {
+  padding: 40px 40px;
+  width: 20%;
+  transition: 1.5s;
+}
+
+.background-logo {
+  margin-top: 140px;
+  background-color: rgba(228, 61, 28, 0.8705882353);
+  width: 450px;
+  height: 600px;
+  text-align: center;
+}
+.background-logo img {
+  max-width: 90%;
+  margin-top: 30px;
+}
+.background-logo h2 {
+  font-size: 32pt;
+  font-style: italic;
+  font-family: sans-serif;
+  color: yellow;
+  font-weight: bold;
+}
+
+.navigation-manual {
+  right: 40%;
+  width: 20%;
+  height: 30px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.manual-btn {
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  margin-right: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cabinet-title {
+  padding-top: 30px;
+}
+
+.cabinet-name {
+  padding-top: 70px;
+}
+
+#slide-1-home:checked ~ .first {
+  margin-left: 0;
+}
+#slide-1-home:checked ~ .auto-btn1 {
+  background: rgb(0, 0, 0);
+}
+#slide-1-home:checked ~ .btn1 {
+  background: rgb(0, 0, 0);
+}
+
+#slide-2-home:checked ~ .first {
+  margin-left: -20%;
+}
+#slide-2-home:checked ~ .auto-btn2 {
+  background: rgb(0, 0, 0);
+}
+#slide-2-home:checked ~ .btn2 {
+  background: black;
+}
+
+#slide-3-home:checked ~ .first {
+  margin-left: -40%;
+}
+#slide-3-home:checked ~ .auto-btn3 {
+  background: rgb(0, 0, 0);
+}
+#slide-3-home:checked ~ .btn3 {
+  background-color: black;
+}
+
+.navigation-auto {
+  left: 40%;
+  justify-content: center;
+  position: absolute;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+.navigation-auto div {
+  background-color: white;
+  border-radius: 10px;
+  height: 12px;
+  width: 12px;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+
+#slide-1-home:checked ~ .auto-btn1 {
+  background: rgb(0, 0, 0);
+}
+
+#slide-2-home:checked ~ .auto-btn2 {
+  background: rgb(0, 0, 0);
+}
+
+#slide-3-home:checked ~ .auto-btn3 {
+  background: rgb(0, 0, 0);
+}
+
+@media (max-width: 575.98px) {
+  #background-img {
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+  }
+  .logo-container {
+    width: 100%;
+  }
+  .background-logo {
+    margin-top: 100px;
+    width: 430px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .background-logo img {
+    max-width: 58%;
+    margin-top: 30px;
+  }
+  .background-logo h2 {
+    font-size: 30pt;
+  }
+  .text-container {
+    margin-top: 80px;
+    margin-left: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .text-container h2 {
+    font-size: 22pt;
+  }
+  .text-container p {
+    font-size: 11pt;
+  }
+}/*# sourceMappingURL=home.css.map */

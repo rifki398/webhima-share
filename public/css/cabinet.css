@@ -4,11 +4,8 @@ html:focus-within {
 
 section #background-img {
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section #popup-section {
   top: 0;
   left: 0;
@@ -18,36 +15,27 @@ section #popup-section {
   height: 870px;
   width: 100%;
   opacity: 0;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  -webkit-transition: all 1s ease-in-out;
+  transform: scale(0.1);
   transition: all 1s ease-in-out;
 }
-
 #cabinet-section .departement-title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   margin-top: 90px;
   margin-bottom: 70px;
 }
-
 #cabinet-section .departement-title h2 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 28pt;
   font-weight: bold;
 }
-
 #cabinet-section.active-appear {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .active-blur {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -57,80 +45,63 @@ section #popup-section {
 
 .cabinet-list {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
 }
-
 .cabinet-list button {
   background-color: white;
   width: 8%;
   border: none;
 }
-
 .cabinet-list button div {
   padding-top: 4px;
 }
-
 .cabinet-list button :hover {
   border-style: inset;
   border-width: 1px;
   border-color: gray;
   border-radius: 10px;
 }
-
 .cabinet-list button :hover img:hover {
   border: none;
 }
-
 .cabinet-list button :hover h6:hover {
   border: none;
 }
-
 .cabinet-list p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #797979;
   font-weight: bold;
   font-size: 8pt;
 }
-
 .cabinet-list .cabinet {
   margin: auto;
   text-align: center;
 }
-
 .cabinet-list .cabinet div {
   display: inline-block;
 }
-
 .cabinet-list .cabinet img {
   max-width: 70%;
 }
-
 .cabinet-list .cabinet h6 {
   margin-top: 12px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 12pt;
 }
 
 .description-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   width: 100%;
   margin-top: 1px;
   margin-bottom: 60px;
 }
-
 .description-list div {
   color: #797979;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 14px;
   width: 16%;
   margin: auto;
@@ -205,10 +176,9 @@ section #popup-section {
   padding: 2px 14px;
   left: 10%;
 }
-
 .popup-cabinet h5 {
   padding-top: 25px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   font-size: 32pt;
   letter-spacing: 1px;
@@ -217,13 +187,10 @@ section #popup-section {
   border-bottom: 8px solid yellow;
   padding-bottom: 10px;
 }
-
 .popup-cabinet p {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding: 100px 16px 100px 16px;
 }
 
@@ -241,16 +208,13 @@ section #popup-section {
 #popupbph {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/BPH.png");
 }
-
 #popupbph.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -258,16 +222,13 @@ section #popup-section {
 #popupadkesma {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/ADKESMA.png");
 }
-
 #popupadkesma.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -275,16 +236,13 @@ section #popup-section {
 #popupristek {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/RISTEK.png");
 }
-
 #popupristek.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -292,16 +250,13 @@ section #popup-section {
 #popupdagri {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/DAGRI.png");
 }
-
 #popupdagri.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -309,16 +264,13 @@ section #popup-section {
 #popuphublu {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/HUBLU.png");
 }
-
 #popuphublu.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -326,16 +278,13 @@ section #popup-section {
 #popupmedfo {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/MEDFO.png");
 }
-
 #popupmedfo.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -343,16 +292,13 @@ section #popup-section {
 #popupkader {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/KADER.png");
 }
-
 #popupkader.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -360,16 +306,13 @@ section #popup-section {
 #popuppsdm {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/PSDM.png");
 }
-
 #popuppsdm.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
@@ -377,17 +320,25 @@ section #popup-section {
 #popupkwu {
   top: 100px;
   opacity: 0;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: hidden;
   background-image: url("../images/KWU.png");
 }
-
 #popupkwu.active-popup {
   top: 150px;
   opacity: 1;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   visibility: visible;
 }
-/*# sourceMappingURL=cabinet.css.map */
+
+@media (max-width: 575.98px) {
+  .description-list div {
+    font-size: 9pt;
+  }
+  .cabinet-list .cabinet h6 {
+    font-size: 11pt;
+  }
+  .popup-cabinet h5 {
+    font-size: 28pt;
+  }
+}/*# sourceMappingURL=cabinet.css.map */
