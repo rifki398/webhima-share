@@ -1,27 +1,27 @@
 const pub_content=[
     {
-        image:'../images/publication/Pub-1.jpg',
-        name:'Ambis Ngampus'
+        image:'../images/publication/pdf.png',
+        name:'M. Dwi Putra Sufandi'
     },
     {
-        image:'../images/publication/Pub-2.jpg',
-        name:'Fisika Yeay'
+        image:'../images/publication/pdf.png',
+        name:'Joko Subianto'
     },
     {
-        image:'../images/publication/Pub-3.jpg',
-        name:'Pengen Libur'
+        image:'../images/publication/pdf.png',
+        name:'Moch. Mehdi Al Mahdani'
     },
     {
-        image:'../images/publication/Pub-4.jpg',
-        name:'Halo Dek'
+        image:'../images/publication/pdf.png',
+        name:'Argya Anindya Maghfirridho'
     },
     {
-        image:'../images/publication/Pub-5.jpg',
-        name:'Easy Dek'
+        image:'../images/publication/pdf.png',
+        name:'Moch. Sidiq Cahyana'
     },
     {
-        image:'../images/publication/Pub-6.jpg',
-        name:'Susah Njir'
+        image:'../images/publication/pdf.png',
+        name:'Moh Rifqy Risqullah'
     }
 ];
 

@@ -18,13 +18,14 @@ header {
 
 .logo-top {
   height: 100px;
-  padding-top: 1.2vh;
-  padding-left: 1.2vw;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 .logo-top img {
   display: block;
   margin: auto;
-  height: 10vh;
+  height: 80%;
 }
 
 .menu-top {

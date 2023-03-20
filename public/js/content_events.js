@@ -35,35 +35,35 @@ const text_img=[
         consequat.`
     },
     {
-        image:'../images/events/event1.png',
+        image:'../images/events/event6.png',
         text:`Lorem1 ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
         veniam, quis nostrud  ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.`,
     },
     {
-        image:'../images/events/event2.png',
+        image:'../images/events/event7.png',
         text:`Lorem2 ipsum  sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.`
     },
     {
-        image:'../images/events/event3.png',
+        image:'../images/events/event8.png',
         text:`Lorem3 ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor  ut labore et dolore magna aliqua. Ut enim ad minim 
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.`
     },
     {
-        image:'../images/events/event4.png',
+        image:'../images/events/event9.png',
         text:`Lorem4 ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna . Ut enim ad minim 
         veniam, quis nobstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
         consequat.`
     },
     {
-        image:'../images/events/event5.png',
+        image:'../images/events/event10.png',
         text:`Lorem5 ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  

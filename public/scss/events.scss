@@ -4,7 +4,6 @@ section{
 }
 #event-section{
     padding-top: 100px;
-    height: 100vh;
     width: 100%;
     background: url("../images/background-events.png");
     background-size: cover;
@@ -82,9 +81,6 @@ section{
 }
 //!------------------------------- FOR RESPONSIVE -------------------------
 @media (max-width:575.98px) {
-    #event-section{
-        height: 112vh;
-    }
     .display-container{
         flex-direction: column;
     }

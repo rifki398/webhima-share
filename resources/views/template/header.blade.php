@@ -10,7 +10,7 @@
       <div class="menu-top">
         <ul>
           <li><a href="{{ route('home') }}">HOME</a></li>
-            <li><a href="#">CABINET</a></li>
+            <li><a href="{{ route('home') }}">CABINET</a></li>
             <li><a href="{{ route('events') }}">EVENTS</a></li>
             <li><a href="{{ route('publications') }}">PUBLICATIONS</a></li>
             <li><a href="{{ route('store') }}">STORE</a></li>

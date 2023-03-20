@@ -54,20 +54,7 @@ button {
   outline: none;
   border: none;
   color: rgb(28, 28, 161);
-  -webkit-animation: move 1.2s infinite ease-in-out;
-          animation: move 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes move {
-  0% {
-    bottom: 36%;
-  }
-  50% {
-    bottom: 34%;
-  }
-  100% {
-    bottom: 36%;
-  }
+  animation: move 1.2s infinite ease-in-out;
 }
 
 @keyframes move {
@@ -207,8 +194,7 @@ button {
   padding: 0;
   top: 0;
   position: relative;
-  -webkit-animation: slide 10s steps(4) infinite;
-          animation: slide 10s steps(4) infinite;
+  animation: slide 10s steps(4) infinite;
 }
 
 .type-text li span {
@@ -223,23 +209,7 @@ button {
   width: 130%;
   background: white;
   border-left: 2px solid black;
-  -webkit-animation: typing 2.5s infinite;
-          animation: typing 2.5s infinite;
-}
-
-@-webkit-keyframes typing {
-  50% {
-    left: 100%;
-    margin: 0 -5px 0 5px;
-  }
-  70% {
-    left: 100%;
-    margin: 0 -5px 0 5px;
-  }
-  100% {
-    left: 0;
-    margin: 0 5px 0 -5px;
-  }
+  animation: typing 2.5s infinite;
 }
 
 @keyframes typing {
@@ -254,11 +224,6 @@ button {
   100% {
     left: 0;
     margin: 0 5px 0 -5px;
-  }
-}
-@-webkit-keyframes slide {
-  100% {
-    top: -208px;
   }
 }
 @keyframes slide {
