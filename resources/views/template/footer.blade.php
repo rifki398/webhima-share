@@ -4,7 +4,7 @@
             <img src="./images/LOGO-HIMASIKA.jpg" />
         </div>
         <div class="logo-cabinet-bot">
-            <img src="./images/logo-dinakara.png" />
+            <img src="./images/Logo Arutala.png" />
         </div>
         <div class="contact">
             <h5>Contact</h5>

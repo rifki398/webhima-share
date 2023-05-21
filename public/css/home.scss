@@ -5,21 +5,16 @@ html{
     background-image: url("../images/background-home.jpg");
     background-position: center;
     background-size:cover;
-    height: 800px;
     width: 100%;
+    padding-top: calc(var(--header-height) + 40px); //based on navbar/header height
+    padding-bottom: 80px;
 }
 .logo-container{
-    float: right;
     width: 40%;
 }
 .text-container{
-    position: relative;
-    margin-top: 230px; //jarak dari atas
-    margin-left: 35px; //kalau bisa tepat ditengah
     background-color:rgba(0,0,0,0.8);
     width: 55%;
-    height: 370px;
-    float: left;
     h2{
         background-color: #E47321;
         background-image: linear-gradient(0deg, #E47321, #daab7f);
@@ -30,7 +25,6 @@ html{
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
         font-family: sans-serif;
-        font-weight: bold;
         letter-spacing: 1px;
         font-size: 26pt;
         line-height: 38px;
@@ -44,9 +38,6 @@ html{
 }
 .slides{
     width: 500%;
-    display: flex;
-    flex-direction: row;
-    height: 400px;
     input{
         display: none;
     }
@@ -57,31 +48,23 @@ html{
     transition: 1.5s;
 }
 .background-logo{
-    margin-top: 140px;
-    background-color: #e43d1cde;
+    background-color:rgba(23,165,143,0.9);
     width: 450px;
     height: 600px;
-    text-align: center;
     img{
-        max-width: 90%;
+        max-height: 55%;
         margin-top: 30px;
     }
     h2{
         font-size: 32pt;
-        font-style: italic;
         font-family: sans-serif;
-        color: yellow;
-        font-weight: bold;
+        color: rgba(242,160,23);
     }
 }
 .navigation-manual{
-    right: 40%;
-    width: 20%; //same to text container
+    width: 100%; //same to text container
     height: 30px; //400px - text container's height
-    margin-top:-50px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    margin-top:-30px;
 }
 .manual-btn{
     background-color: white;
@@ -136,12 +119,8 @@ html{
 //----------------------------------------- FOR AUTO SLIDE ----------------------------------------------
 .navigation-auto{
     left: 40%;
-    justify-content: center;
-    position: absolute;
     width: 20%;
-    display: flex;
-    justify-content: center;
-    margin-top:-50px; 
+    margin-top:-30px; 
     div{
         background-color: white;
         //----- same as manual btn
@@ -152,31 +131,17 @@ html{
         transition: 0.5s;
     }
 }
-#slide-1-home:checked ~ .auto-btn1 {
-    background: rgb(0,0,0);
-}
-#slide-2-home:checked ~ .auto-btn2{
-    background: rgb(0,0,0);
-}
-#slide-3-home:checked ~ .auto-btn3{
-    background: rgb(0,0,0);
-}
 //!--------------------------------- FOR RESPONSIVE -----------------------------------------------------
 @media (max-width:575.98px){
     #background-img{
-        display: flex;
-        flex-direction: column;
-        height: 1150px;
+        padding-top: 20px;
+        flex-direction:column-reverse;
     }
     .logo-container{
         width: 100%;
     }
     .background-logo{
         margin-top: 100px;
-        width: 430px; //280px
-        height: 500px;
-        margin-left: auto;
-        margin-right: auto;
         img{
             max-width: 58%;
             margin-top: 30px;
@@ -187,7 +152,6 @@ html{
     }
     .text-container{
         margin-top: 80px; //jarak dari atas
-        margin-left: 0px; //kalau bisa tepat ditengah
         width: 100%;
         h2{
             font-size: 22pt;

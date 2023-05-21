@@ -10,15 +10,7 @@ class MainController extends Controller
         return view('home');
     }
 
-    public function store() {
-        return view('store');
-    }
-
     public function events() {
         return view('events');
-    }
-
-    public function publications() {
-        return view('publications');
     }
 }

@@ -6,55 +6,48 @@ body {
   overflow: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+:root {
+  --header-height:80px;
+}
+
 header {
   width: 100%;
   background-color: #17181B;
-  height: 100px;
-  position: fixed;
+  height: var(--header-height);
   top: 0;
-  z-index: 10;
-  display: flex;
 }
 
-.logo-top {
-  height: 100px;
-  display: flex;
-  align-items: center;
+#logo-top {
+  height: var(--header-height);
   margin-left: 10px;
 }
-.logo-top img {
-  display: block;
-  margin: auto;
+#logo-top img {
   height: 80%;
 }
 
-.menu-top {
-  margin-left: 180px;
+#menu-top {
   height: 100%;
-  text-align: center;
 }
-.menu-top ul {
-  height: 100px;
+#menu-top ul {
+  height: 100%;
 }
-.menu-top li {
+#menu-top li {
+  height: 100%;
   width: 150px;
-  position: relative;
-  display: inline-block;
 }
-.menu-top li a {
-  vertical-align: middle;
+#menu-top li a {
   height: 100%;
   width: 100%;
-  padding-top: 41px;
+  padding-top: calc(var(--header-height) / 2 - 10px);
   font-family: "Lato", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  display: inline-block;
-  text-decoration: none;
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
-.menu-top li :after {
+#menu-top li :after {
   content: "";
   position: absolute;
   background-color: white;
@@ -64,27 +57,19 @@ header {
   bottom: 0;
   transition: 0.1s;
 }
-.menu-top li :hover {
+#menu-top li :hover {
   background-color: #232529;
 }
-.menu-top li :hover:after {
+#menu-top li :hover:after {
   height: 4px;
 }
-.menu-top ul li {
-  height: 100px;
-}
 
-.login-top {
-  position: absolute;
+#login-top {
   right: 0;
-  margin: auto 30px;
-  width: 100px;
-  height: 100%;
-  padding-top: 30px;
+  margin-right: 30px;
 }
-.login-top button {
+#login-top button {
   font-family: "Lato", sans-serif;
-  font-weight: bold;
   font-size: 14px;
   width: 100%;
   height: 40px;
@@ -93,7 +78,7 @@ header {
   background-color: transparent;
   border-radius: 8px;
 }
-.login-top button:hover {
+#login-top button:hover {
   color: #17181B;
   background-color: #08D0FC;
   border: 1px solid #17181B;
@@ -104,45 +89,32 @@ header {
   visibility: hidden;
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #login-section {
-  display: flex;
   width: 1000px;
   height: 580px;
-  margin: auto;
 }
 
 .sign-in {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid #8299E9;
-  padding: 60px;
   height: 100%;
   background-color: white;
-  text-align: center;
 }
 .sign-in h3 {
   font-family: "Poppins";
   font-size: 32pt;
-  font-weight: bold;
 }
 
 .username-cl, .password-cl {
-  display: inline-block;
   width: 70%;
   text-align: left;
 }
 .username-cl label, .password-cl label {
   line-height: 8px;
   margin-top: 30px;
-  font-weight: bold;
 }
 .username-cl input, .password-cl input {
   padding-left: 4px;
@@ -151,32 +123,13 @@ header {
   width: 100%;
 }
 
-.checkbox-cl {
-  display: inline-block;
-  width: 70%;
-  justify-content: left;
-  text-align: left;
-  margin-bottom: 60px;
-}
-.checkbox-cl input {
-  float: left;
-  margin-top: 2.5px;
-}
-.checkbox-cl p {
-  font-size: 9pt;
-}
-
 .sign-in-col button {
-  font-weight: bold;
   padding-bottom: 4px;
-  display: block;
   border-radius: 8px;
   color: white;
   background-color: black;
   width: 100px;
   height: 40px;
-  margin: auto;
-  margin-bottom: 10px;
   border: 1px solid black;
 }
 .sign-in-col button:hover {
@@ -184,7 +137,6 @@ header {
   color: black;
 }
 .sign-in-col a {
-  text-decoration: none;
   color: black;
 }
 .sign-in-col a:hover {
@@ -194,36 +146,29 @@ header {
 .sign-up {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  text-align: center;
-  padding: 60px;
   background-color: #8299E9;
   height: 100%;
 }
 .sign-up h2 {
-  margin-top: 80px;
   color: white;
-  font-weight: bold;
   font-family: "Poppins";
-  font-size: 40pt;
+  font-size: 32pt;
   letter-spacing: 1px;
 }
 .sign-up p {
+  width: 70%;
   color: white;
   font-family: "Poppins";
   font-size: 14pt;
 }
 .sign-up button {
   border: 2px solid white;
-  font-weight: bold;
   padding-bottom: 4px;
-  display: block;
   border-radius: 8px;
   color: white;
   background-color: #8299E9;
   width: 100px;
   height: 40px;
-  margin: auto;
-  margin-top: 117px;
 }
 .sign-up button:hover {
   background-color: white;
@@ -231,14 +176,12 @@ header {
 }
 
 .close-icon {
-  position: relative;
   font-size: 20px;
 }
 .close-icon span {
-  position: absolute;
+  right: 10px;
+  top: 8px;
   color: black;
-  top: -55px;
-  right: -52px;
   font-size: 20px;
 }
 .close-icon span:hover {
@@ -259,9 +202,6 @@ header {
 
 #checkbox-menu {
   display: none;
-}
-#checkbox-menu :focus {
-  background-color: red;
 }
 
 .menu-more {

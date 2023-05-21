@@ -6,23 +6,18 @@ html {
   background-image: url("../images/background-home.jpg");
   background-position: center;
   background-size: cover;
-  height: 800px;
   width: 100%;
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 80px;
 }
 
 .logo-container {
-  float: right;
   width: 40%;
 }
 
 .text-container {
-  position: relative;
-  margin-top: 230px;
-  margin-left: 35px;
   background-color: rgba(0, 0, 0, 0.8);
   width: 55%;
-  height: 370px;
-  float: left;
   overflow: hidden;
 }
 .text-container h2 {
@@ -35,7 +30,6 @@ html {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   font-family: sans-serif;
-  font-weight: bold;
   letter-spacing: 1px;
   font-size: 26pt;
   line-height: 38px;
@@ -47,9 +41,6 @@ html {
 
 .slides {
   width: 500%;
-  display: flex;
-  flex-direction: row;
-  height: 400px;
 }
 .slides input {
   display: none;
@@ -62,32 +53,24 @@ html {
 }
 
 .background-logo {
-  margin-top: 140px;
-  background-color: rgba(228, 61, 28, 0.8705882353);
+  background-color: rgba(23, 165, 143, 0.9);
   width: 450px;
   height: 600px;
-  text-align: center;
 }
 .background-logo img {
-  max-width: 90%;
+  max-height: 55%;
   margin-top: 30px;
 }
 .background-logo h2 {
   font-size: 32pt;
-  font-style: italic;
   font-family: sans-serif;
-  color: yellow;
-  font-weight: bold;
+  color: rgb(242, 160, 23);
 }
 
 .navigation-manual {
-  right: 40%;
-  width: 20%;
+  width: 100%;
   height: 30px;
-  margin-top: -50px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
+  margin-top: -30px;
 }
 
 .manual-btn {
@@ -139,12 +122,8 @@ html {
 
 .navigation-auto {
   left: 40%;
-  justify-content: center;
-  position: absolute;
   width: 20%;
-  display: flex;
-  justify-content: center;
-  margin-top: -50px;
+  margin-top: -30px;
 }
 .navigation-auto div {
   background-color: white;
@@ -155,33 +134,16 @@ html {
   transition: 0.5s;
 }
 
-#slide-1-home:checked ~ .auto-btn1 {
-  background: rgb(0, 0, 0);
-}
-
-#slide-2-home:checked ~ .auto-btn2 {
-  background: rgb(0, 0, 0);
-}
-
-#slide-3-home:checked ~ .auto-btn3 {
-  background: rgb(0, 0, 0);
-}
-
 @media (max-width: 575.98px) {
   #background-img {
-    display: flex;
-    flex-direction: column;
-    height: 1150px;
+    padding-top: 20px;
+    flex-direction: column-reverse;
   }
   .logo-container {
     width: 100%;
   }
   .background-logo {
     margin-top: 100px;
-    width: 430px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .background-logo img {
     max-width: 58%;
@@ -192,7 +154,6 @@ html {
   }
   .text-container {
     margin-top: 80px;
-    margin-left: 0px;
     width: 100%;
     overflow: hidden;
   }

@@ -28,29 +28,23 @@
     <script src="./js/all_script.js"></script>
   </head>
   <body>
-    <!--HEADER-->  
+    <!--HEADER-->
     @extends('template.header')
     @section('header')
     @endsection
     <!--?----------------------------------- Home Page ------------------------------------------------>
-    <section id="background-img">
-      <div class="logo-container">
-        <div class="background-logo">
-          <h2 class="cabinet-title">KABINET</h2>
-          <img src="images/logo-dinakara.png">
-          <h2 class="cabinet-name">DINAKARA</h2>
-        </div>
-      </div>
+    <section id="background-img"
+    class="container-fluid d-flex justify-content-evenly align-items-center">
       <!-- Text Container  -->
-      <div class="text-container">
-        <div class="slides">
+      <div class="text-container position-relative">
+        <div class="slides d-flex flex-row">
           <!--- Dot Button -->
           <input type="radio" name="radio-btn" id="slide-1-home">
           <input type="radio" name="radio-btn" id="slide-2-home">
           <input type="radio" name="radio-btn" id="slide-3-home">
           <!-- Slide 1 -->
           <div class="slide-home first">
-            <h2>Himpunan Mahasiswa Fisika</h2>
+            <h2 class="fw-bold">Himpunan Mahasiswa Fisika</h2>
             <h2>Institut Teknologi Sepuluh Nopember</h2>
             <p>
               Himpunan Mahasiswa Fisika Institut Teknologi Sepuluh Nopember
@@ -85,16 +79,23 @@
           </div>
         </div>
         <!-- Automatic Navigation -->
-        <div class="navigation-auto">
+        <div class="navigation-auto d-flex justify-content-center position-absolute">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
           <div class="auto-btn3"></div>
         </div>
         <!-- Manual Navigation -->
-        <div class="navigation-manual">
+        <div class="navigation-manual position-absolute d-flex justify-content-center">
           <label for="slide-1-home" class="manual-btn btn1"></label>
           <label for="slide-2-home" class="manual-btn btn2"></label>
           <label for="slide-3-home" class="manual-btn btn3"></label>
+        </div>
+      </div>
+      <div class="logo-container">
+        <div class="background-logo text-center ms-auto me-auto">
+          <h2 class="cabinet-title fw-bold fst-italic">KABINET</h2>
+          <img src="images/Logo Arutala.png">
+          <h2 class="cabinet-name fw-bold fst-italic">ARUTALA</h2>
         </div>
       </div>
     </section>
